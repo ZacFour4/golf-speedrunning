@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dev76jp6jx3tf"]
 
-[ext_resource type="Script" uid="uid://ojc6cmf8s5at" path="res://Scenes/map_generation.gd" id="1_0ba56"]
+[ext_resource type="Script" uid="uid://ojc6cmf8s5at" path="res://Scripts/map_generation.gd" id="1_0ba56"]
 
 [node name="Map" type="Node2D"]
 
