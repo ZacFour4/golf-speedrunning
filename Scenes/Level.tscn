@@ -1,12 +1,15 @@
 [gd_scene load_steps=2 format=3 uid="uid://dev76jp6jx3tf"]
 
-[ext_resource type="Material" uid="uid://d2rpk6xgb0sfh" path="res://Materials/GrassShaderMaterial.tres" id="1_0ba56"]
+[ext_resource type="Script" uid="uid://ojc6cmf8s5at" path="res://Scenes/map_generation.gd" id="1_0ba56"]
 
 [node name="Map" type="Node2D"]
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
-material = ExtResource("1_0ba56")
+script = ExtResource("1_0ba56")
 
 [node name="Polygon2D" type="Polygon2D" parent="CanvasGroup"]
 position = Vector2(1, 0)
+invert_enabled = true
 polygon = PackedVector2Array(433, 130, 430, 247, 582, 241, 556, 421, 166, 206)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CanvasGroup"]
