@@ -7,9 +7,13 @@
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 script = ExtResource("1_0ba56")
 
-[node name="Polygon2D" type="Polygon2D" parent="CanvasGroup"]
+[node name="Add" type="Node2D" parent="CanvasGroup"]
+
+[node name="Polygon2D" type="Polygon2D" parent="CanvasGroup/Add"]
 position = Vector2(1, 0)
 invert_enabled = true
 polygon = PackedVector2Array(433, 130, 430, 247, 582, 241, 556, 421, 166, 206)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CanvasGroup"]
+
+[node name="Colliders" type="Node2D" parent="CanvasGroup"]
